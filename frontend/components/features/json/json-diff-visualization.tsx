@@ -384,7 +384,7 @@ export default function JsonDiffVisualization({
           path: "$",
           metadata: {
             type: typeof compareData,
-            schemaVersion: (compareData as any)?.schemaVersion || "N/A",
+            schemaVersion: compareData?.schemaVersion || "N/A",
           },
         },
       })
